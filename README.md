@@ -30,7 +30,7 @@ pip install powerline-travis-ci
  
 The very minimum required to activate the segment is to add the following to your theme JSON:
  
-```
+```json
 {
    "function": "powerline_travis_ci.latest_build_state",
    "args": {
@@ -42,9 +42,8 @@ The very minimum required to activate the segment is to add the following to you
  
 and the following to your colorscheme JSON (the colors can be customized):
  
-```
+```json
 "groups": {
-      ...,
       "latest_travis_build_state": {
           "fg": "gray9",
           "bg": "gray2",
@@ -78,7 +77,7 @@ In addition to the generic `latest_travis_build_state` group, each state can be 
 
 For example,
 
-```
+```json
 "latest_travis_build_state_passed": {
     "fg": "white",
     "bg": "darkestgreen",
